@@ -37,18 +37,9 @@ $cakeDescription = 'Add Chakra';
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     
-    <?= $this->Html->css([
-		'../lib/jquery.vectormap/jquery-jvectormap-1.2.2.css',
-		'../lib/jqvmap/jqvmap.min.css',
-		'../lib/datetimepicker/css/bootstrap-datetimepicker.min.css',
-		'style.css'
-	]) ?>
-
-    <?= $this->fetch('meta') ?>
-    <?= $this->fetch('css') ?>
-    <?= $this->fetch('script') ?>
+    <?= $this->Html->css('style.css'); ?>
 </head>
-<body>
+<body class="be-splash-screen">
 	<?= $this->fetch('content') ?>
     <?= $this->Flash->render() ?>
 	<?= $this->Html->script([
@@ -56,24 +47,12 @@ $cakeDescription = 'Add Chakra';
 		'../lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js',
 		'main.js',
 		'../lib/bootstrap/dist/js/bootstrap.min.js',
-		'../lib/jquery-flot/jquery.flot.js',
-		'../lib/jquery-flot/jquery.flot.pie.js',
-		'../lib/jquery-flot/jquery.flot.resize.js',
-		'../lib/jquery-flot/plugins/jquery.flot.orderBars.js',
-		'../lib/jquery-flot/plugins/curvedLines.js',
-		'../lib/jquery.sparkline/jquery.sparkline.min.js',
-		'../lib/countup/countUp.min.js',
-		'../lib/jquery-ui/jquery-ui.min.js',
-		'../lib/jqvmap/jquery.vmap.min.js',
-		'../lib/jqvmap/maps/jquery.vmap.world.js',
-		'app-dashboard.js'
 	]); ?>
 	
     <script type="text/javascript">
 		$(document).ready(function(){
 			//initialize the javascript
 			App.init();
-			App.dashboard();
 		});
     </script>
 </body>

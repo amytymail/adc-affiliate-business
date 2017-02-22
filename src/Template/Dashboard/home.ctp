@@ -89,13 +89,19 @@
                   <li class="divider">Menu</li>
                   <li class="active"><a href="index.html"><i class="icon mdi mdi-home"></i><span>Dashboard</span></a>
                   </li>
-                  <li class="parent"><a href="#"><i class="icon mdi mdi-face"></i><span>UI Elements</span></a>
+                  <li class="parent"><a href="#"><i class="icon mdi mdi-face"></i><span>Affiliates</span></a>
                     <ul class="sub-menu">
-                      <li><a href="ui-alerts.html">Alerts</a>
+                      <li><a href="ui-alerts.html">Add Affiliate Event</a>
                       </li>
-                      <li><a href="ui-buttons.html">Buttons</a>
+                      <li><a href="ui-buttons.html">Assign Task</a>
                       </li>
-                      <li><a href="ui-panels.html">Panels</a>
+                      <li><a href="ui-panels.html"> Affiliates</a>
+						<ul class="sub-menu">
+							<li><a href="ui-alerts.html">Add a New Affiliate</a></li>
+							<li><a href="ui-alerts.html">Edit Multiple Affiliate</a></li>
+						</ul>
+                      <li><a href="ui-buttons.html">Assign Task</a>
+                      </li>
                       </li>
                       <li><a href="ui-general.html">General</a>
                       </li>
