@@ -13,45 +13,74 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = 'CakePHP: the rapid development php framework';
+$cakeDescription = 'Add Chakra';
 ?>
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+	<head>
+    
+    <!--link rel="shortcut icon" href="webroot/img/logo-fav.png">
+    <title>Beagle</title-->
+    
+    
     <?= $this->Html->charset() ?>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <title>
         <?= $cakeDescription ?>:
         <?= $this->fetch('title') ?>
     </title>
     <?= $this->Html->meta('icon') ?>
-
-    <?= $this->Html->css('base.css') ?>
-    <?= $this->Html->css('cake.css') ?>
+	<?= $this->Html->css([
+		'../lib/perfect-scrollbar/css/perfect-scrollbar.min.css', 
+		'../lib/material-design-icons/css/material-design-iconic-font.min.css'
+	]); ?>
+	<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <?= $this->Html->css([
+		'../lib/jquery.vectormap/jquery-jvectormap-1.2.2.css',
+		'../lib/jqvmap/jqvmap.min.css',
+		'../lib/datetimepicker/css/bootstrap-datetimepicker.min.css',
+		'style.css'
+	]) ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
 </head>
 <body>
-    <nav class="top-bar expanded" data-topbar role="navigation">
-        <ul class="title-area large-3 medium-4 columns">
-            <li class="name">
-                <h1><a href=""><?= $this->fetch('title') ?></a></h1>
-            </li>
-        </ul>
-        <div class="top-bar-section">
-            <ul class="right">
-                <li><a target="_blank" href="http://book.cakephp.org/3.0/">Documentation</a></li>
-                <li><a target="_blank" href="http://api.cakephp.org/3.0/">API</a></li>
-            </ul>
-        </div>
-    </nav>
+	<?= $this->fetch('content') ?>
     <?= $this->Flash->render() ?>
-    <div class="container clearfix">
-        <?= $this->fetch('content') ?>
-    </div>
-    <footer>
-    </footer>
+	<?= $this->Html->script([
+		'../lib/jquery/jquery.min.js',
+		'../lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js',
+		'main.js',
+		'../lib/bootstrap/dist/js/bootstrap.min.js',
+		'../lib/jquery-flot/jquery.flot.js',
+		'../lib/jquery-flot/jquery.flot.pie.js',
+		'../lib/jquery-flot/jquery.flot.resize.js',
+		'../lib/jquery-flot/plugins/jquery.flot.orderBars.js',
+		'../lib/jquery-flot/plugins/curvedLines.js',
+		'../lib/jquery.sparkline/jquery.sparkline.min.js',
+		'../lib/countup/countUp.min.js',
+		'../lib/jquery-ui/jquery-ui.min.js',
+		'../lib/jqvmap/jquery.vmap.min.js',
+		'../lib/jqvmap/maps/jquery.vmap.world.js',
+		'app-dashboard.js'
+	]); ?>
+	
+    <script type="text/javascript">
+		$(document).ready(function(){
+			//initialize the javascript
+			App.init();
+			App.dashboard();
+		});
+    </script>
 </body>
 </html>
