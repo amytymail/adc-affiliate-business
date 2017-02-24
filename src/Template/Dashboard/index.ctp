@@ -18,7 +18,7 @@
                             </li>
                             <li><a href="#"><span class="icon mdi mdi-face"></span> Account</a></li>
                             <li><a href="#"><span class="icon mdi mdi-settings"></span> Settings</a></li>
-                            <li><a href="#"><span class="icon mdi mdi-power"></span> Logout</a></li>
+                            <li><a href="/users/logout"><span class="icon mdi mdi-power"></span> Logout</a></li>
                         </ul>
                     </li>
                 </ul>

@@ -40,8 +40,8 @@ $cakeDescription = 'Add Chakra';
     <?= $this->Html->css('style.css'); ?>
 </head>
 <body class="be-splash-screen">
+	<?= $this->Flash->render('authError'); ?>
 	<?= $this->fetch('content') ?>
-    <?= $this->Flash->render() ?>
 	<?= $this->Html->script([
 		'../lib/jquery/jquery.min.js',
 		'../lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js',

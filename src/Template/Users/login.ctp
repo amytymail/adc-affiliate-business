@@ -10,12 +10,15 @@
                         <span class="splash-description">Please enter your user information.</span>
                     </div>
                     <div class="panel-body">
+						<?php	
+							echo $this->Form->create();
+						?>
                         <form action="index.html" method="get">
                             <div class="form-group">
-                                <input id="username" type="text" placeholder="Username" autocomplete="off" class="form-control">
+                                <input name="username" type="text" placeholder="Username" autocomplete="off" class="form-control">
                             </div>
                             <div class="form-group">
-                                <input id="password" type="password" placeholder="Password" class="form-control">
+                                <input name="password" type="password" placeholder="Password" class="form-control">
                             </div>
                             <div class="form-group row login-tools">
                                 <div class="col-xs-6 login-remember">
