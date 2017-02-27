@@ -6,7 +6,7 @@
                 <ul class="sidebar-elements">
                   <li class="divider">Menu</li>
                   <li class="active"><a href="dashboard"><i class="icon mdi mdi-home"></i><span>Dashboard</span></a></li>
-                  <li class="parent"><a href="#"><i class="icon mdi mdi-face"></i><span>Affiliates</span></a>
+                  <li class="parent"><a href="#"><i class="icon mdi mdi-accounts-outline"></i><span>Affiliates</span></a>
                     <ul class="sub-menu">
                       <li><a href="affiliates/add_event">Add Affiliate Event</a>
                       </li>
@@ -51,11 +51,11 @@
               </div>
             </div>
           </div>
-          <div class="progress-widget">
+          <!--div class="progress-widget">
             <div class="progress-data"><span class="progress-value">60%</span><span class="name">Current Project</span></div>
             <div class="progress">
               <div style="width: 60%;" class="progress-bar progress-bar-primary"></div>
             </div>
-          </div>
+          </div-->
         </div>
       </div>

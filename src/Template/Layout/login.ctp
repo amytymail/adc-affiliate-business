@@ -40,7 +40,7 @@ $cakeDescription = 'Add Chakra';
     <?= $this->Html->css('style.css'); ?>
 </head>
 <body class="be-splash-screen">
-	<?= $this->Flash->render('authError'); ?>
+	<?= $this->Flash->render(); ?>
 	<?= $this->fetch('content') ?>
 	<?= $this->Html->script([
 		'../lib/jquery/jquery.min.js',

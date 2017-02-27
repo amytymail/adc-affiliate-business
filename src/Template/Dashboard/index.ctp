@@ -1,4 +1,4 @@
-<div class="be-content">
+<!--div class="be-content">
     <div class="main-content container-fluid">
         <div class="row">
             <div class="col-xs-12 col-md-6 col-lg-3">
@@ -351,4 +351,4 @@
             </div>
         </div>
     </div>
-</div>
+</div-->
