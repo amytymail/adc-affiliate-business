@@ -38,6 +38,14 @@ $cakeDescription = 'Add Chakra';
     <![endif]-->
     
     <?= $this->Html->css('style.css'); ?>
+	<!-- JavaScript -->
+	<script src="//cdn.jsdelivr.net/alertifyjs/1.9.0/alertify.min.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.9.0/css/alertify.min.css"/>
+	<!-- Bootstrap theme -->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.9.0/css/themes/semantic.min.css"/>
+	
 </head>
 <body class="be-splash-screen">
 	<?= $this->Flash->render(); ?>
