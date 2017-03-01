@@ -44,7 +44,7 @@ $cakeDescription = 'Add Chakra';
 	<!-- CSS -->
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.9.0/css/alertify.min.css"/>
 	<!-- Bootstrap theme -->
-	<link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.9.0/css/themes/semantic.min.css"/>
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.9.0/css/themes/bootstrap.min.css"/>
 	
 </head>
 <body class="be-splash-screen">
@@ -58,6 +58,7 @@ $cakeDescription = 'Add Chakra';
 	]); ?>
 	
     <script type="text/javascript">
+		alertify.set('notifier','position', 'top-right');
 		$(document).ready(function(){
 			//initialize the javascript
 			App.init();
