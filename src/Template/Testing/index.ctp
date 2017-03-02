@@ -1,4 +1,26 @@
-<div class="be-contents">
+<div class="be-left-sidebar">
+	<div class="left-sidebar-wrapper"><a href="#" class="left-sidebar-toggle">Dashboard</a>
+	  <div class="left-sidebar-spacer">
+		<div class="left-sidebar-scroll">
+		  <div class="left-sidebar-content">
+			<ul class="sidebar-elements">
+			 <li class="divider">Testing Menu</li>
+			 <li><a href="testing/clicks"><i class="icon mdi mdi-accounts-outline"></i><span>Clicks</span></a></li>
+			 <li><a href="testing/conversations"><i class="icon mdi mdi-accounts-outline"></i><span>Conversations</span></a></li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	  <!--div class="progress-widget">
+		<div class="progress-data"><span class="progress-value">60%</span><span class="name">Current Project</span></div>
+		<div class="progress">
+		  <div style="width: 60%;" class="progress-bar progress-bar-primary"></div>
+		</div>
+	  </div-->
+	</div>
+  </div>
+  
+<div class="be-content">
     <div class="main-content container-fluid">
         <div class="row">
             <div class="col-md-12">

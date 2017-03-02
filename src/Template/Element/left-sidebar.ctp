@@ -6,6 +6,7 @@
                 <ul class="sidebar-elements">
                   <li class="divider">Menu</li>
                   <li class="active"><a href="dashboard"><i class="icon mdi mdi-home"></i><span>Dashboard</span></a></li>
+				  <li><a href="stats"><i class="icon mdi mdi-chart-donut"></i><span>Stats</span></a></li>
                   <li class="parent"><a href="#"><i class="icon mdi mdi-accounts-outline"></i><span>Affiliates</span></a>
                     <ul class="sub-menu">
                       <li><a href="affiliates/add_event">Add Affiliate Event</a>
@@ -22,7 +23,8 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="parent"><a href="#"><i class="icon mdi mdi-chart-donut"></i><span>Advertisers</span></a>
+                  
+				  <li class="parent"><a href="#"><i class="icon mdi mdi-chart-donut"></i><span>Advertisers</span></a>
                     <ul class="sub-menu">
                       <li><a href="advertisers/events">Events</a>
                       </li>

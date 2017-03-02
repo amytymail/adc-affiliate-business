@@ -8279,13 +8279,23 @@ canvas {
   }
 }
 .be-top-header .page-title {
-  font-size: 19px;
+  font-size: 14px;
   line-height: 60px;
   float: left;
   padding: 0 20px;
+  position: relative;
+}
+.be-top-header .page-title a {
+  color:#3d3d3d;
+}
+.be-top-header .page-title:hover {
+  background:#f2f2f2;
 }
 .be-nosidebar-left .be-top-header .page-title {
   padding-left: 10px;
+}
+.page-title.active {
+    background: #ddd;
 }
 @media (max-width: 767px) {
   .be-top-header .page-title {
@@ -20397,4 +20407,15 @@ fieldset[disabled] .full-calendar .fc-button.active {
   .lg-mb-0 {
     margin-bottom: 0px !important;
   }
+}
+/***************************************/
+ a .indicator {
+    background-color: #4285f4;
+    border-radius: 50%;
+    display: block;
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    top: 18px;
+    right: 6px;
 }

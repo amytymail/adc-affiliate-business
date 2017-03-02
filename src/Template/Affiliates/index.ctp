@@ -1,3 +1,29 @@
+<div class="be-left-sidebar">
+	<div class="left-sidebar-wrapper"><a href="#" class="left-sidebar-toggle">Dashboard</a>
+	  <div class="left-sidebar-spacer">
+		<div class="left-sidebar-scroll">
+		  <div class="left-sidebar-content">
+			<ul class="sidebar-elements">
+			 <li class="divider">Affiliates Menu</li>
+			 <li><a href="affiliates/add_event"><i class="icon mdi mdi-accounts-outline"></i><span>Add Affiliate Event</span></a></li>
+			 <li><a href="affiliates/assign_task"><i class="icon mdi mdi-accounts-outline"></i><span>Assign Task</span></a></li>
+			 <li><a href="affiliates/creative_pack"><i class="icon mdi mdi-accounts-outline"></i><span>Send Creative Pack</span></a></li>
+			 <li><a href="affiliates/generate_unique_click"><i class="icon mdi mdi-accounts-outline"></i><span>Generate Unique Link</span></a></li>
+			 <li><a href="affiliates/compaign"><i class="icon mdi mdi-accounts-outline"></i><span>Compaigns</span></a></li>
+			 <li><a href="affiliates/pixels"><i class="icon mdi mdi-accounts-outline"></i><span>Pixels</span></a></li>
+			
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	  <!--div class="progress-widget">
+		<div class="progress-data"><span class="progress-value">60%</span><span class="name">Current Project</span></div>
+		<div class="progress">
+		  <div style="width: 60%;" class="progress-bar progress-bar-primary"></div>
+		</div>
+	  </div-->
+	</div>
+  </div>
 <div class="be-content">
     <div class="main-content container-fluid">
         <div class="row">

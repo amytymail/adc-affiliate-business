@@ -26,7 +26,7 @@ use Cake\View\Exception\MissingTemplateException;
  *
  * @link http://book.cakephp.org/3.0/en/controllers/pages-controller.html
  */
-class setupController extends AppController
+class ActivitiesController extends AppController
 {
 	public function initialize() {
         parent::initialize();
@@ -43,6 +43,6 @@ class setupController extends AppController
      */
     public function index()
     {
-		
+
     }
 }

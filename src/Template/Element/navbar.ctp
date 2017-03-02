@@ -21,7 +21,14 @@
                     </ul>
                 </li>
             </ul>
-            <div class="page-title"><span>Dashboard</span></div>
+            <div class="page-title active"><i class="icon mdi mdi-home"></i> <a href="dashboard"><span>Dashboard</span></a></div>
+            <div class="page-title"><i class="icon mdi mdi-chart-donut"></i> <a href="stats"><span>Stats</span></a></div>
+            <div class="page-title"><i class="icon mdi mdi-assignment"></i> <a href="affiliates"><span>Affiliates</span></a></div>
+            <div class="page-title"><i class="icon mdi mdi-assignment-check"></i> <a href="advertisers"><span>Advertisers</span></a></div>
+            <div class="page-title"><i class="icon mdi mdi-assignment-o"></i> <a href="reports"><span>Reports</span></a></div>
+            <div class="page-title"><i class="icon mdi mdi-settings"></i> <a href="setup"><span>Setup</span></a></div>
+            <div class="page-title"><i class="icon mdi mdi-hourglass-alt"></i> <a href="activities"><span>Recent Activities</span></a></div>
+            <div class="page-title"><i class="icon mdi mdi-labels"></i> <a href="testing"><span>Testing</span></a></div>
             <ul class="nav navbar-nav navbar-right be-icons-nav">
                 <li class="dropdown"><a href="#" role="button" aria-expanded="false" class="be-toggle-right-sidebar"><span class="icon mdi mdi-settings"></span></a></li>
                 <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><span class="icon mdi mdi-notifications"></span><span class="indicator"></span></a>

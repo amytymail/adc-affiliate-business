@@ -40,9 +40,15 @@ $cakeDescription = 'Add Chakra';
 
         <?=
         $this->Html->css([
+            '../lib/perfect-scrollbar/css/perfect-scrollbar.min.css',
             '../lib/jquery.vectormap/jquery-jvectormap-1.2.2.css',
             '../lib/jqvmap/jqvmap.min.css',
             '../lib/datetimepicker/css/bootstrap-datetimepicker.min.css',
+            '../lib/material-design-icons/css/material-design-iconic-font.min.css',
+            '../lib/datatables/css/dataTables.bootstrap.min.css',
+            '../lib/datetimepicker/css/bootstrap-datetimepicker.min.css',
+            '../lib/select2/css/select2.min.css',
+            '../lib/bootstrap-slider/css/bootstrap-slider.css',
             'style.css'
         ])
         ?>
@@ -54,7 +60,6 @@ $cakeDescription = 'Add Chakra';
     <body>
         <div class="be-wrapper be-fixed-sidebar">
             <?= $this->element('navbar'); ?>
-            <?= $this->element('left-sidebar'); ?>
             <?= $this->fetch('content') ?>
             <?= $this->element('right-sidebar'); ?>
         </div>
@@ -74,16 +79,35 @@ $cakeDescription = 'Add Chakra';
             '../lib/jquery-ui/jquery-ui.min.js',
             '../lib/jqvmap/jquery.vmap.min.js',
             '../lib/jqvmap/maps/jquery.vmap.world.js',
-            'app-dashboard.js'
+            '../lib/datatables/js/jquery.dataTables.min.js',
+            '../lib/datatables/js/dataTables.bootstrap.min.js',
+            '../lib/datatables/plugins/buttons/js/dataTables.buttons.js',
+            '../lib/datatables/plugins/buttons/js/buttons.html5.js',
+            '../lib/datatables/plugins/buttons/js/buttons.flash.js',
+            '../lib/datatables/plugins/buttons/js/buttons.print.js',
+            '../lib/datatables/plugins/buttons/js/buttons.colVis.js',
+            '../lib/datatables/plugins/buttons/js/buttons.bootstrap.js',
+            '../lib/moment.js/min/moment.min.js',
+            '../lib/datetimepicker/js/bootstrap-datetimepicker.min.js',
+            '../lib/select2/js/select2.min.js',
+            '../lib/bootstrap-slider/js/bootstrap-slider.js',
+            '../lib/chartjs/Chart.min.js',
+            'app-tables-datatables.js',
+            'app-form-elements.js',
+            'app-charts-chartjs.js',
+			'app-dashboard.js',
         ]);
         ?>
-
-        <script type="text/javascript">
+       <script type="text/javascript">
             $(document).ready(function () {
                 //initialize the javascript
                 App.init();
-                App.dashboard();
+				App.dataTables();
+				App.formElements();
+				App.ChartJs();
+				App.dashboard();
             });
         </script>
+		
     </body>
 </html>

@@ -4,11 +4,9 @@
 		<div class="left-sidebar-scroll">
 		  <div class="left-sidebar-content">
 			<ul class="sidebar-elements">
-			 <li class="divider">Affiliates Menu</li>
-			 <li><a href="advertisers/events"><i class="icon mdi mdi-accounts-outline"></i><span>Events</span></a></li>
-			 <li><a href="advertisers/offers"><i class="icon mdi mdi-accounts-outline"></i><span>Offer</span></a></li>
-			 <li><a href="advertisers/ceative"><i class="icon mdi mdi-accounts-outline"></i><span>Creative</span></a></li>
-			 <li><a href="advertisers/conversion_pixel"><i class="icon mdi mdi-accounts-outline"></i><span>Coversion Pixel</span></a></li>
+			 <li class="divider">Activities Menu</li>
+			 <li><a href="activities/applied"><i class="icon mdi mdi-accounts-outline"></i><span>Applied</span></a></li>
+			 <li><a href="activities/pending"><i class="icon mdi mdi-accounts-outline"></i><span>Pending</span></a></li>
 			</ul>
 		  </div>
 		</div>
