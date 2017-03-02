@@ -45,4 +45,9 @@ class TestingController extends AppController
     {
 
     }
+	
+	public function conversations()
+    {
+
+    }
 }
