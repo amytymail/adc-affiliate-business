@@ -49,6 +49,7 @@ $cakeDescription = 'Add Chakra';
             '../lib/datetimepicker/css/bootstrap-datetimepicker.min.css',
             '../lib/select2/css/select2.min.css',
             '../lib/bootstrap-slider/css/bootstrap-slider.css',
+            '../lib/select2/css/select2.min.css',
             'style.css'
         ])
         ?>
@@ -58,7 +59,7 @@ $cakeDescription = 'Add Chakra';
             <?= $this->fetch('script') ?>
     </head>
     <body>
-        <div class="be-wrapper be-fixed-sidebar">
+        <div class="be-wrapper be-aside be-fixed-sidebar">
             <?= $this->element('navbar'); ?>
             <?= $this->fetch('content') ?>
             <?= $this->element('right-sidebar'); ?>
@@ -91,7 +92,12 @@ $cakeDescription = 'Add Chakra';
             '../lib/datetimepicker/js/bootstrap-datetimepicker.min.js',
             '../lib/select2/js/select2.min.js',
             '../lib/bootstrap-slider/js/bootstrap-slider.js',
+            '../lib/jquery.niftymodals/dist/jquery.niftymodals.js',
+            '../lib/select2/js/select2.min.js',
+            '../lib/jquery.magnific-popup/jquery.magnific-popup.min.js',
+            '../lib/masonry/masonry.pkgd.min.js',
             '../lib/chartjs/Chart.min.js',
+            'app-mail-inbox.js',
             'app-tables-datatables.js',
             'app-form-elements.js',
             'app-charts-chartjs.js',
@@ -100,6 +106,11 @@ $cakeDescription = 'Add Chakra';
         ?>
        <script type="text/javascript">
             $(document).ready(function () {
+				$.fn.niftyModal('setDefaults',{
+					overlaySelector: '.modal-overlay',
+					closeSelector: '.modal-close',
+					classAddAfterOpen: 'modal-show',
+				});
                 //initialize the javascript
                 App.init();
 				App.dataTables();

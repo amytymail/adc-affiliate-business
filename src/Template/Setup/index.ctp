@@ -7,6 +7,7 @@
 			 <li class="divider">Setup Menu</li>
 			 <li><a href="setup/token"><i class="icon mdi mdi-accounts-outline"></i><span>Tokens</span></a></li>
 			 <li><a href="setup/users"><i class="icon mdi mdi-accounts-outline"></i><span>Users</span></a></li>
+			 <li><a href="setup/usergroup"><i class="icon mdi mdi-accounts-outline"></i><span>User Group</span></a></li>
 			 <li><a href="setup/emails"><i class="icon mdi mdi-accounts-outline"></i><span>Emails</span></a></li>
 			 <li><a href="setup/tags"><i class="icon mdi mdi-accounts-outline"></i><span>Tags</span></a></li>
 			</ul>

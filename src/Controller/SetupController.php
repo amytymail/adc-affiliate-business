@@ -45,4 +45,19 @@ class setupController extends AppController
     {
 		
     }
+	
+	public function users()
+    {
+
+    }
+	
+	public function usergroup()
+    {
+
+    }
+	
+	public function emails()
+    {
+
+    }
 }
