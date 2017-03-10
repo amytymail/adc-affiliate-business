@@ -6,13 +6,13 @@
 			<ul class="sidebar-elements">
 			 <li class="divider">Setup Menu</li>
 			 <li><a href="setup/settings"><i class="icon mdi mdi-accounts-outline"></i><span>Settings</span></a></li>
-			 <li class="active"><a href="setup/users"><i class="icon mdi mdi-accounts-outline"></i><span>Users</span></a></li>
+			 <li><a href="setup/users"><i class="icon mdi mdi-accounts-outline"></i><span>Users</span></a></li>
 			 <li><a href="setup/emails"><i class="icon mdi mdi-accounts-outline"></i><span>Emails</span></a></li>
 			 <li><a href="setup/verticals"><i class="icon mdi mdi-accounts-outline"></i><span>Verticals</span></a></li>
 			 <li><a href="setup/alerts"><i class="icon mdi mdi-accounts-outline"></i><span>Alerts</span></a></li>
 			 <li><a href="setup/token"><i class="icon mdi mdi-accounts-outline"></i><span>Tokens</span></a></li>
 			 <li><a href="setup/tags"><i class="icon mdi mdi-accounts-outline"></i><span>Tags</span></a></li>
-			 <li><a href="setup/permissions"><i class="icon mdi mdi-accounts-outline"></i><span>Permissions</span></a></li>
+			 <li  class="active"><a href="setup/permissions"><i class="icon mdi mdi-accounts-outline"></i><span>Permissions</span></a></li>
 			</ul>
 		  </div>
 		</div>
@@ -33,7 +33,7 @@
                 <div class="widget widget-fullwidth be-loading">
                     <div class="widget-head">
                         <div class="tools">
-                            <span data-modal="md-scale" class="icon mdi mdi-plus-circle md-trigger"></span>
+                            <span data-modal="md-scale" class="icon mdi mdi-accounts-list md-trigger"></span>
 							<span class="icon toggle-loading mdi mdi-refresh-sync"></span>
 							<span class="icon mdi mdi-close"></span>
                         </div>
@@ -45,11 +45,11 @@
 						  <table id="table1" class="table table-striped table-hover table-fw-widget">
 							<thead>
 							  <tr>
-								<th>Registration Date</th>
 								<th>Name</th>
-								<th>Email</th>
-								<th>User Group</th>
-								<th>Status</th>
+								<th>Parent Group</th>
+								<th>Activites</th>
+								<th>Satus</th>
+								<th>ID</th>
 							  </tr>
 							</thead>
 							<tbody>
@@ -86,23 +86,12 @@
 	<button type="button" data-dismiss="modal" aria-hidden="true" class="close modal-close"><span class="mdi mdi-close"></span></button>
   </div>
   <div class="modal-body">
-   	  <form action="#" data-parsley-validate="" novalidate="">
+	<form action="#" data-parsley-validate="" novalidate="">
 		<div class="form-group">
 		  <label>Name</label>
 		  <input type="text" name="nick" parsley-trigger="change" required="" placeholder="Enter user name" autocomplete="off" class="form-control">
 		</div>
-		<div class="form-group">
-		  <label>User Name</label>
-		  <input type="text" name="nick" parsley-trigger="change" required="" placeholder="Enter user name" autocomplete="off" class="form-control">
-		</div>
-		<div class="form-group">
-		  <label>Email address</label>
-		  <input type="email" name="email" parsley-trigger="change" required="" placeholder="Enter email" autocomplete="off" class="form-control">
-		</div>
-		<div class="form-group">
-		  <label>Password</label>
-		  <input id="pass1" type="password" placeholder="Password" required="" class="form-control">
-		</div>
+		
 		<div class="form-group">
 		  <label>User Group</label>
 		  	<select class="select2">
@@ -178,7 +167,6 @@
 		  <button type="button" data-dismiss="modal" class="btn btn-default btn-space modal-close">Cancel</button>
 		</p>
 	  </form>
-		
   </div>
   <div class="modal-footer"></div>
 </div>

@@ -6,11 +6,11 @@
 			<ul class="sidebar-elements">
 			 <li class="divider">Setup Menu</li>
 			 <li><a href="setup/settings"><i class="icon mdi mdi-accounts-outline"></i><span>Settings</span></a></li>
-			 <li class="active"><a href="setup/users"><i class="icon mdi mdi-accounts-outline"></i><span>Users</span></a></li>
+			 <li><a href="setup/users"><i class="icon mdi mdi-accounts-outline"></i><span>Users</span></a></li>
 			 <li><a href="setup/emails"><i class="icon mdi mdi-accounts-outline"></i><span>Emails</span></a></li>
 			 <li><a href="setup/verticals"><i class="icon mdi mdi-accounts-outline"></i><span>Verticals</span></a></li>
 			 <li><a href="setup/alerts"><i class="icon mdi mdi-accounts-outline"></i><span>Alerts</span></a></li>
-			 <li><a href="setup/token"><i class="icon mdi mdi-accounts-outline"></i><span>Tokens</span></a></li>
+			 <li class="active"><a href="setup/token"><i class="icon mdi mdi-accounts-outline"></i><span>Tokens</span></a></li>
 			 <li><a href="setup/tags"><i class="icon mdi mdi-accounts-outline"></i><span>Tags</span></a></li>
 			 <li><a href="setup/permissions"><i class="icon mdi mdi-accounts-outline"></i><span>Permissions</span></a></li>
 			</ul>

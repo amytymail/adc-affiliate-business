@@ -59,7 +59,7 @@ $cakeDescription = 'Add Chakra';
             <?= $this->fetch('script') ?>
     </head>
     <body>
-        <div class="be-wrapper be-aside be-fixed-sidebar">
+        <div class="be-wrapper be-fixed-sidebar">
             <?= $this->element('navbar'); ?>
             <?= $this->fetch('content') ?>
             <?= $this->element('right-sidebar'); ?>
@@ -96,6 +96,7 @@ $cakeDescription = 'Add Chakra';
             '../lib/select2/js/select2.min.js',
             '../lib/jquery.magnific-popup/jquery.magnific-popup.min.js',
             '../lib/masonry/masonry.pkgd.min.js',
+            '../lib/parsley/parsley.min.js',
             '../lib/chartjs/Chart.min.js',
             'app-mail-inbox.js',
             'app-tables-datatables.js',
@@ -106,17 +107,19 @@ $cakeDescription = 'Add Chakra';
         ?>
        <script type="text/javascript">
             $(document).ready(function () {
-				$.fn.niftyModal('setDefaults',{
-					overlaySelector: '.modal-overlay',
-					closeSelector: '.modal-close',
-					classAddAfterOpen: 'modal-show',
-				});
+				
                 //initialize the javascript
                 App.init();
 				App.dataTables();
 				App.formElements();
 				App.ChartJs();
 				App.dashboard();
+				$.fn.niftyModal('setDefaults',{
+					overlaySelector: '.modal-overlay',
+					closeSelector: '.modal-close',
+					classAddAfterOpen: 'modal-show',
+				});
+				$('form').parsley();
             });
         </script>
 		

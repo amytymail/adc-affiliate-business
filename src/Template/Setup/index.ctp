@@ -5,11 +5,14 @@
 		  <div class="left-sidebar-content">
 			<ul class="sidebar-elements">
 			 <li class="divider">Setup Menu</li>
-			 <li><a href="setup/token"><i class="icon mdi mdi-accounts-outline"></i><span>Tokens</span></a></li>
+			 <li class="active"><a href="setup/settings"><i class="icon mdi mdi-accounts-outline"></i><span>Settings</span></a></li>
 			 <li><a href="setup/users"><i class="icon mdi mdi-accounts-outline"></i><span>Users</span></a></li>
-			 <li><a href="setup/usergroup"><i class="icon mdi mdi-accounts-outline"></i><span>User Group</span></a></li>
 			 <li><a href="setup/emails"><i class="icon mdi mdi-accounts-outline"></i><span>Emails</span></a></li>
+			 <li><a href="setup/verticals"><i class="icon mdi mdi-accounts-outline"></i><span>Verticals</span></a></li>
+			 <li><a href="setup/alerts"><i class="icon mdi mdi-accounts-outline"></i><span>Alerts</span></a></li>
+			 <li><a href="setup/token"><i class="icon mdi mdi-accounts-outline"></i><span>Tokens</span></a></li>
 			 <li><a href="setup/tags"><i class="icon mdi mdi-accounts-outline"></i><span>Tags</span></a></li>
+			 <li><a href="setup/permissions"><i class="icon mdi mdi-accounts-outline"></i><span>Permissions</span></a></li>
 			</ul>
 		  </div>
 		</div>
@@ -25,354 +28,523 @@
 <div class="be-content">
     <div class="main-content container-fluid">
         <div class="row">
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <div class="widget widget-tile">
-                    <div id="spark1" class="chart sparkline"></div>
-                    <div class="data-info">
-                        <div class="desc">New Users</div>
-                        <div class="value"><span class="indicator indicator-equal mdi mdi-chevron-right"></span><span data-toggle="counter" data-end="113" class="number">0</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <div class="widget widget-tile">
-                    <div id="spark2" class="chart sparkline"></div>
-                    <div class="data-info">
-                        <div class="desc">Monthly Sales</div>
-                        <div class="value"><span class="indicator indicator-positive mdi mdi-chevron-up"></span><span data-toggle="counter" data-end="80" data-suffix="%" class="number">0</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <div class="widget widget-tile">
-                    <div id="spark3" class="chart sparkline"></div>
-                    <div class="data-info">
-                        <div class="desc">Impressions</div>
-                        <div class="value"><span class="indicator indicator-positive mdi mdi-chevron-up"></span><span data-toggle="counter" data-end="532" class="number">0</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <div class="widget widget-tile">
-                    <div id="spark4" class="chart sparkline"></div>
-                    <div class="data-info">
-                        <div class="desc">Downloads</div>
-                        <div class="value"><span class="indicator indicator-negative mdi mdi-chevron-down"></span><span data-toggle="counter" data-end="113" class="number">0</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
             <div class="col-md-12">
-                <div class="widget widget-fullwidth be-loading">
-                    <div class="widget-head">
-                        <div class="tools">
-                            <div class="dropdown"><span data-toggle="dropdown" class="icon mdi mdi-more-vert visible-xs-inline-block dropdown-toggle"></span>
-                                <ul role="menu" class="dropdown-menu">
-                                    <li><a href="#">Week</a></li>
-                                    <li><a href="#">Month</a></li>
-                                    <li><a href="#">Year</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#">Today</a></li>
-                                </ul>
-                            </div><span class="icon mdi mdi-chevron-down"></span><span class="icon toggle-loading mdi mdi-refresh-sync"></span><span class="icon mdi mdi-close"></span>
-                        </div>
-                        <div class="button-toolbar hidden-xs">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-default">Week</button>
-                                <button type="button" class="btn btn-default active">Month</button>
-                                <button type="button" class="btn btn-default">Year</button>
-                            </div>
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-default">Today</button>
-                            </div>
-                        </div><span class="title">Recent Movement</span>
-                    </div>
-                    <div class="widget-chart-container">
-                        <div class="widget-chart-info">
-                            <ul class="chart-legend-horizontal">
-                                <li><span data-color="main-chart-color1"></span> Purchases</li>
-                                <li><span data-color="main-chart-color2"></span> Plans</li>
-                                <li><span data-color="main-chart-color3"></span> Services</li>
-                            </ul>
-                        </div>
-                        <div class="widget-counter-group widget-counter-group-right">
-                            <div class="counter counter-big">
-                                <div class="value">25%</div>
-                                <div class="desc">Purchase</div>
-                            </div>
-                            <div class="counter counter-big">
-                                <div class="value">5%</div>
-                                <div class="desc">Plans</div>
-                            </div>
-                            <div class="counter counter-big">
-                                <div class="value">5%</div>
-                                <div class="desc">Services</div>
-                            </div>
-                        </div>
-                        <div id="main-chart" style="height: 260px;"></div>
-                    </div>
-                    <div class="be-spinner">
-                        <svg width="40px" height="40px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                        <circle fill="none" stroke-width="4" stroke-linecap="round" cx="33" cy="33" r="30" class="circle"></circle>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="panel panel-default panel-table">
-                    <div class="panel-heading"> 
-                        <div class="tools"><span class="icon mdi mdi-download"></span><span class="icon mdi mdi-more-vert"></span></div>
-                        <div class="title">Purchases</div>
-                    </div>
-                    <div class="panel-body table-responsive">
-                        <table class="table table-striped table-borderless">
-                            <thead>
-                                <tr>
-                                    <th style="width:40%;">Product</th>
-                                    <th class="number">Price</th>
-                                    <th style="width:20%;">Date</th>
-                                    <th style="width:20%;">State</th>
-                                    <th style="width:5%;" class="actions"></th>
-                                </tr>
-                            </thead>
-                            <tbody class="no-border-x">
-                                <tr>
-                                    <td>Sony Xperia M4</td>
-                                    <td class="number">$149</td>
-                                    <td>Aug 23, 2016</td>
-                                    <td class="text-success">Completed</td>
-                                    <td class="actions"><a href="#" class="icon"><i class="mdi mdi-plus-circle-o"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>Apple iPhone 6</td>
-                                    <td class="number">$535</td>
-                                    <td>Aug 20, 2016</td>
-                                    <td class="text-success">Completed</td>
-                                    <td class="actions"><a href="#" class="icon"><i class="mdi mdi-plus-circle-o"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>Samsung Galaxy S7</td>
-                                    <td class="number">$583</td>
-                                    <td>Aug 18, 2016</td>
-                                    <td class="text-warning">Pending</td>
-                                    <td class="actions"><a href="#" class="icon"><i class="mdi mdi-plus-circle-o"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>HTC One M9</td>
-                                    <td class="number">$350</td>
-                                    <td>Aug 15, 2016</td>
-                                    <td class="text-warning">Pending</td>
-                                    <td class="actions"><a href="#" class="icon"><i class="mdi mdi-plus-circle-o"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>Sony Xperia Z5</td>
-                                    <td class="number">$495</td>
-                                    <td>Aug 13, 2016</td>
-                                    <td class="text-danger">Cancelled</td>
-                                    <td class="actions"><a href="#" class="icon"><i class="mdi mdi-plus-circle-o"></i></a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="panel panel-default panel-table">
-                    <div class="panel-heading">
-                        <div class="tools"><span class="icon mdi mdi-download"></span><span class="icon mdi mdi-more-vert"></span></div>
-                        <div class="title">Latest Commits</div>
-                    </div>
-                    <div class="panel-body table-responsive">
-                        <table class="table table-striped table-hover">
-                            <thead>
-                                <tr>
-                                    <th style="width:37%;">User</th>
-                                    <th style="width:36%;">Commit</th>
-                                    <th>Date</th>
-                                    <th class="actions"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="user-avatar"> <img src="webroot/img/avatar6.png" alt="Avatar">Penelope Thornton</td>
-                                    <td>Topbar dropdown style</td>
-                                    <td>Aug 16, 2016</td>
-                                    <td class="actions"><a href="#" class="icon"><i class="mdi mdi-github-alt"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td class="user-avatar"> <img src="webroot/img/avatar4.png" alt="Avatar">Benji Harper</td>
-                                    <td>Left sidebar adjusments</td>
-                                    <td>Jul 15, 2016</td>
-                                    <td class="actions"><a href="#" class="icon"><i class="mdi mdi-github-alt"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td class="user-avatar"> <img src="webroot/img/avatar5.png" alt="Avatar">Justine Myranda</td>
-                                    <td>Main structure markup</td>
-                                    <td>Jul 28, 2016</td>
-                                    <td class="actions"><a href="#" class="icon"><i class="mdi mdi-github-alt"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td class="user-avatar"> <img src="webroot/img/avatar3.png" alt="Avatar">Sherwood Clifford</td>
-                                    <td>Initial commit</td>
-                                    <td>Jun 30, 2016</td>
-                                    <td class="actions"><a href="#" class="icon"><i class="mdi mdi-github-alt"></i></a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-md-4">
                 <div class="panel panel-default">
-                    <div class="panel-heading panel-heading-divider xs-pb-15">Current Progress</div>
-                    <div class="panel-body xs-pt-25">
-                        <div class="row user-progress user-progress-small">
-                            <div class="col-md-5"><span class="title">Bootstrap Admin</span></div>
-                            <div class="col-md-7">
-                                <div class="progress">
-                                    <div style="width: 40%" class="progress-bar progress-bar-success"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row user-progress user-progress-small">
-                            <div class="col-md-5"><span class="title">Custom Work</span></div>
-                            <div class="col-md-7">
-                                <div class="progress">
-                                    <div style="width: 65%" class="progress-bar progress-bar-success"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row user-progress user-progress-small">
-                            <div class="col-md-5"><span class="title">Clients Module</span></div>
-                            <div class="col-md-7">
-                                <div class="progress">
-                                    <div style="width: 30%" class="progress-bar progress-bar-success"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row user-progress user-progress-small">
-                            <div class="col-md-5"><span class="title">Email Templates</span></div>
-                            <div class="col-md-7">
-                                <div class="progress">
-                                    <div style="width: 80%" class="progress-bar progress-bar-success"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row user-progress user-progress-small">
-                            <div class="col-md-5"><span class="title">Plans Module</span></div>
-                            <div class="col-md-7">
-                                <div class="progress">
-                                    <div style="width: 45%" class="progress-bar progress-bar-success"></div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="panel-heading">Settings</div>
+                <div class="tab-container">
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a href="#globalSettings" data-toggle="tab">Global</a></li>
+                    <li><a href="#trackingSettings" data-toggle="tab">Tracking</a></li>
+                    <li><a href="#emailSettings" data-toggle="tab">Email</a></li>
+                    <li><a href="#billingSettings" data-toggle="tab">Billing</a></li>
+                    <li><a href="#advertiserSettings" data-toggle="tab">Advertiser Portal</a></li>
+                    <li><a href="#affiliateSettings" data-toggle="tab">Affiliate Portal</a></li>
+                    <li><a href="#3rdpartySettings" data-toggle="tab">Third Party Integration</a></li>
+                    <li><a href="#customApperance" data-toggle="tab">Custom Apperance</a></li>
+                    <li><a href="#defaultEntities" data-toggle="tab">Default Entities</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div id="globalSettings" class="tab-pane active cont">
+						<div class="panel-heading panel-heading-divider">System Settings</div>
+						<div class="panel-body">
+						  <form action="#" data-parsley-validate="" novalidate="">
+							<div class="form-group">
+							  <label>Admin Domain URL *:</label>
+							  <input parsley-type="url" type="url" name="domainurl" parsley-trigger="change" required="" placeholder="http://" autocomplete="off" class="form-control">
+							</div>
+							<div class="form-group">
+								<div class="be-checkbox">
+								  <input id="ssl" type="checkbox" name="ssl" class="icheck">
+								  <label for="ssl">Force SSL (Secure Socket Layer):</label>
+								</div>
+								<div class="be-checkbox">
+								  <input id="multiple_laguage" type="checkbox" name="multiple_laguage" class="icheck">
+								  <label for="multiple_laguage">Multiple Languages:</label>
+								</div>
+							</div>
+							<div class="form-group">
+							  <label>Login URL Override:</label>
+							  <input parsley-type="url" type="url" name="login_override_url" parsley-trigger="change" required="" placeholder="http://" autocomplete="off" class="form-control">
+							</div>
+							
+							<div class="panel-heading panel-heading-divider">Affiliate Signup</div>
+							
+							<div class="form-group">
+							  <label>Affiliate Signup URL:</label>
+							  <input parsley-type="url" type="url" id="affiliate_login" name="affiliate_login" placeholder="http://" required="" class="form-control">
+							</div>
+							<div class="form-group">
+								<div class="be-checkbox">
+								  <input id="default_tnd" type="checkbox" name="default_tnd" class="icheck">
+								  <label for="default_tnd">Use CAKE's Default Terms & Conditions:</label>
+								</div>
+								<div class="be-checkbox">
+								  <input id="affiliate_tnd" type="checkbox" name="affiliate_tnd" class="icheck">
+								  <label for="affiliate_tnd">Send Affiliate Terms & Conditions at Signup:</label>
+								</div>
+								<div class="be-checkbox">
+								  <input id="force_login" type="checkbox" name="force_login" class="icheck">
+								  <label for="force_login">Force Login:</label>
+								</div>
+							</div>
+							<div class="panel-heading panel-heading-divider">Naming ID Conventions</div>
+							<div class="form-group">
+								<div class="be-checkbox">
+								  <input id="show_affiliate_id" type="checkbox" name="show_affiliate_id" class="icheck">
+								  <label for="show_affiliate_id">Show Affiliate ID:</label>
+								</div>
+								<div class="be-checkbox">
+								  <input id="show_offer_id" type="checkbox" name="show_affiliate_id" class="icheck">
+								  <label for="show_affiliate_id">Show Offer ID:</label>
+								</div>
+								<div class="be-checkbox">
+								  <input id="show_filter_by" type="checkbox" name="show_filter_by" class="icheck">
+								  <label for="show_filter_by">View Thru Only Filter:</label>
+								</div>
+								<div class="be-checkbox">
+								  <input id="payout_tier" type="checkbox" name="payout_tier" class="icheck">
+								  <label for="payout_tier">Affiliate Payout Tiers:</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<label>Default Affiliate Tier *:</label>
+							  	<select name ="affiliate_tier" class="select2">
+								  	<option value="tier1">Tier 1</option>
+									<option value="tier2">Tier 2</option>
+									<option value="tier3">Tier 3</option>
+								</select>
+							  </div>
+							</div>
+							<div class="panel-heading panel-heading-divider">Advertiser Credit</div>
+							<div class="form-group">						
+								<div class="be-checkbox">
+								  <input id="limit_advr_credit" type="checkbox" name="limit_advr_credit" class="icheck">
+								  <label for="limit_advr_credit">Limit Advertiser Traffic by Credit:</label>
+								</div>
+								<div class="panel-heading panel-heading-divider">Filters</div>
+														
+								<div class="be-checkbox">
+								  <input id="hide_expired_offer" type="checkbox" name="hide_expired_offer" class="icheck">
+								  <label for="hide_expired_offer">Hide Expired Offers:</label>
+								</div>						
+								<div class="be-checkbox">
+								  <input id="hide_inactive_offer" type="checkbox" name="hide_inactive_offer" class="icheck">
+								  <label for="hide_inactive_offer">Hide Inactive Offers:</label>
+								</div>
+							</div>
+							
+							<div class="panel-heading panel-heading-divider">All Portals Security Settings</div>
+							<div class="form-group">
+							  <label>Max Failed Login Attempts:</label>
+							  <input type="text" name="login_attempts" parsley-trigger="change" required="" placeholder="3" autocomplete="off" class="form-control">
+							</div>
+							<div class="panel-heading panel-heading-divider">Security Settings</div>
+							<div class="form-group">
+							  <label>Admin Portal Session Timeout (in minutes):</label>
+							  <input type="text" name="session_timeout" parsley-trigger="change" required="" placeholder="30" autocomplete="off" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>Password Strength:</label>
+							  <input type="text" name="password_strength" parsley-trigger="change" required="" placeholder="week or strong" autocomplete="off" class="form-control">
+							</div>
+							<div class="form-group">
+								<div class="be-checkbox">
+								  <input id="password_history_restriction" type="checkbox" name="password_history_restriction" class="icheck">
+								  <label for="password_history_restriction">Password Usage History Restriction:</label>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label>Password Expiration Policy *:</label>
+							  	<select name ="affiliate_tier" class="select2">
+								  	<option value="0">disabled</option>
+									<option value="30">30</option>
+									<option value="60">60</option>
+									<option value="90">90</option>
+									<option value="180">180</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<div class="be-checkbox">
+								  <input id="password_reset" type="checkbox" name="password_reset" class="icheck">
+								  <label for="password_reset">Force Password Reset:</label>
+								</div>
+							</div>
+							<p class="text-right">
+							  <button type="submit" class="btn btn-space btn-primary">Submit</button>
+							  <button class="btn btn-space btn-default">Cancel</button>
+							</p>
+						  </form>
+						</div>
+                    <div id="trackingSettings" class="tab-pane cont">
+						<div class="panel-heading panel-heading-divider">Tracking Settings</div>
+						<div class="panel-body">
+						  <form action="#" data-parsley-validate="" novalidate="">
+							<div class="form-group">
+							  <label>Cookie Domain *:</label>
+							  <input parsley-type="url" type="url" name="cookie_domain_url" parsley-trigger="change" required="" placeholder="http://" autocomplete="off" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>Session Regeneration Minutes *:</label>
+							  <input type="text" name="session_regeneration_minute" parsley-trigger="change" required="" placeholder="0" autocomplete="off" class="form-control">
+							</div>
+							<div class="form-group">
+								<div class="be-checkbox">
+								  <input id="throttling" type="checkbox" name="throttling" class="icheck">
+								  <label for="throttling">Throttling:</label>
+								</div>
+							</div>
+							<div class="form-group">
+							  <label>Global Redirect *:</label>
+							  <input type="text" name="global_redirect" parsley-trigger="change" required="" placeholder="" autocomplete="off" class="form-control">
+							</div>
+							<div class="form-group">
+								<div class="be-checkbox">
+								  <input id="encrypt_links:" type="checkbox" name="encrypt_links" class="icheck">
+								  <label for="encrypt_links">Encrypt Links:</label>
+								</div>
+							</div>
+							<div class="form-group">
+							  <label>Base Tracking Domain Redirect:</label>
+							  <input parsley-type="url" type="url" name="base_domain_redirect" parsley-trigger="change" required="" placeholder="http://" autocomplete="off" class="form-control">
+							</div>
+							<div class="form-group">
+								<div class="be-checkbox">
+								  <input id="encrypt_links:" type="checkbox" name="encrypt_links" class="icheck">
+								  <label for="encrypt_links">Don't pay for Bot Traffic on CPC:</label>
+								</div>
+								<div class="be-checkbox">
+								  <input id="encrypt_links:" type="checkbox" name="encrypt_links" class="icheck">
+								  <label for="encrypt_links">Don't pay for Bot Traffic on CPM:</label>
+								</div>
+								<div class="be-checkbox">
+								  <input id="encrypt_links:" type="checkbox" name="encrypt_links" class="icheck">
+								  <label for="encrypt_links">Campaign Level Override on Blocked IP/Bot Traffic:</label>
+								</div>
+								<div class="be-checkbox">
+								  <input id="encrypt_links:" type="checkbox" name="encrypt_links" class="icheck">
+								  <label for="encrypt_links">Enable Events:</label>
+								</div>
+								<div class="be-checkbox">
+								  <input id="encrypt_links:" type="checkbox" name="encrypt_links" class="icheck">
+								  <label for="encrypt_links">Grouped Offers:</label>
+								</div>
+								<div class="be-checkbox">
+								  <input id="encrypt_links:" type="checkbox" name="encrypt_links" class="icheck">
+								  <label for="encrypt_links">Child Click Inherits Parent SubIDs:</label>
+								</div>
+							</div>
+							<div class="form-group">
+							  <label>Cap Percentage Threshold:</label>
+							  <input type="text" name="global_redirect" parsley-trigger="change" required="" placeholder="" autocomplete="off" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>Session Timeout Seconds:</label>
+							  <input type="text" name="global_redirect" parsley-trigger="change" required="" placeholder="" autocomplete="off" class="form-control">
+							</div>
+							<div class="form-group">
+							<div class="panel-heading panel-heading-divider">Global Pixels & Postbacks</div>
+								<div class="be-checkbox">
+								  <input id="encrypt_links:" type="checkbox" name="encrypt_links" class="icheck">
+								  <label for="encrypt_links">Global Pixels:</label>
+								</div>
+							</div>
+							<div class="form-group">
+							  <label class="col-sm-3 control-label">Global Pixel:</label>
+							  <div class="col-sm-6">
+								<textarea class="form-control"></textarea>
+							  </div>
+							</div>
+							<div class="form-group">
+							  <label>Postback URL:</label>
+							  <input parsley-type="url" type="url" name="cookie_domain_url" parsley-trigger="change" required="" placeholder="http://" autocomplete="off" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>Postback Delay (ms):</label>
+							  <input type="text" name="global_redirect" parsley-trigger="change" required="" placeholder="" autocomplete="off" class="form-control">
+							</div>
+							<div class="form-group">
+								<div class="be-checkbox">
+								  <input id="encrypt_links:" type="checkbox" name="encrypt_links" class="icheck">
+								  <label for="encrypt_links">Fire Global System Pixel By Default:</label>
+								</div>
+								<div class="be-checkbox">
+								  <input id="encrypt_links:" type="checkbox" name="encrypt_links" class="icheck">
+								  <label for="encrypt_links">Fire Pixel On Non Paid Conversions:</label>
+								</div>
+							</div>
+							<div class="panel-heading panel-heading-divider">Global Pixels & Postbacks</div>
+							<div class="form-group">
+								<label>Conversion Cap Behavior:</label>
+							  	<select name ="affiliate_tier" class="select2">
+								  	<option value="0">Advertiser Payment, Affiliate Payment</option>
+								  	<option value="0">Advertiser Payment, No Affiliate Payment</option>
+									<option value="30">Ignore Conversion</option>
+									<option value="60">No Advertiser Payment, Affiliate Payment</option>
+									<option value="90">No Advertiser Payment, No Affiliate Payment</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label>Conversion Behavior On Redirect:</label>
+							  	<select name ="affiliate_tier" class="select2">
+								  	<option value="0">Advertiser Payment, Affiliate Payment</option>
+								  	<option value="0">Advertiser Payment, No Affiliate Payment</option>
+									<option value="30">Ignore Conversion</option>
+									<option value="60">No Advertiser Payment, Affiliate Payment</option>
+									<option value="90">No Advertiser Payment, No Affiliate Payment</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label>Event Cap Behavior:</label>
+							  	<select name ="affiliate_tier" class="select2">
+								  	<option value="0">Advertiser Payment, Affiliate Payment</option>
+								  	<option value="0">Advertiser Payment, No Affiliate Payment</option>
+									<option value="30">Ignore Conversion</option>
+									<option value="60">No Advertiser Payment, Affiliate Payment</option>
+									<option value="90">No Advertiser Payment, No Affiliate Payment</option>
+								</select>
+							</div>
+							<div class="panel-heading panel-heading-divider">Original Campaign Settings</div>
+							<div class="form-group">
+							<div class="be-checkbox">
+							  <input id="encrypt_links:" type="checkbox" name="encrypt_links" class="icheck">
+							  <label for="encrypt_links">Original Campaign by Offer Contract:</label>
+							</div>
+							<div class="be-checkbox">
+							  <input id="encrypt_links:" type="checkbox" name="encrypt_links" class="icheck">
+							  <label for="encrypt_links">Original Campaign by Media Type:</label>
+							</div>
+							</div>
+							<p class="text-right">
+							  <button type="submit" class="btn btn-space btn-primary">Submit</button>
+							  <button class="btn btn-space btn-default">Cancel</button>
+							</p>
+						  </form>
+						</div>
                     </div>
+                    <div id="emailSettings" class="tab-pane">
+						<div class="panel-heading panel-heading-divider">Global Settings</div>
+						<div class="panel-body">
+						  <form action="#" data-parsley-validate="" novalidate="">
+							<div class="form-group">
+							  <label>User Name</label>
+							  <input type="text" name="nick" parsley-trigger="change" required="" placeholder="Enter user name" autocomplete="off" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>Email address</label>
+							  <input type="email" name="email" parsley-trigger="change" required="" placeholder="Enter email" autocomplete="off" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>Password</label>
+							  <input id="pass1" type="password" placeholder="Password" required="" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>Repeat Password</label>
+							  <input data-parsley-equalto="#pass1" type="password" required="" placeholder="Password" class="form-control">
+							</div>
+							<div class="be-checkbox">
+							  <input id="check1" type="checkbox" class="icheck">
+							  <label for="check1">Remember me</label>
+							</div>
+							<p class="text-right">
+							  <button type="submit" class="btn btn-space btn-primary">Submit</button>
+							  <button class="btn btn-space btn-default">Cancel</button>
+							</p>
+						  </form>
+						</div>
+                    </div>
+					<div id="billingSettings" class="tab-pane">
+						<div class="panel-heading panel-heading-divider">Global Settings</div>
+						<div class="panel-body">
+						  <form action="#" data-parsley-validate="" novalidate="">
+							<div class="form-group">
+							  <label>User Name</label>
+							  <input type="text" name="nick" parsley-trigger="change" required="" placeholder="Enter user name" autocomplete="off" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>Email address</label>
+							  <input type="email" name="email" parsley-trigger="change" required="" placeholder="Enter email" autocomplete="off" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>Password</label>
+							  <input id="pass1" type="password" placeholder="Password" required="" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>Repeat Password</label>
+							  <input data-parsley-equalto="#pass1" type="password" required="" placeholder="Password" class="form-control">
+							</div>
+							<div class="be-checkbox">
+							  <input id="check1" type="checkbox" class="icheck">
+							  <label for="check1">Remember me</label>
+							</div>
+							<p class="text-right">
+							  <button type="submit" class="btn btn-space btn-primary">Submit</button>
+							  <button class="btn btn-space btn-default">Cancel</button>
+							</p>
+						  </form>
+						</div>
+                    </div>
+					<div id="advertiserSettings" class="tab-pane">
+						<div class="panel-heading panel-heading-divider">Global Settings</div>
+						<div class="panel-body">
+						  <form action="#" data-parsley-validate="" novalidate="">
+							<div class="form-group">
+							  <label>User Name</label>
+							  <input type="text" name="nick" parsley-trigger="change" required="" placeholder="Enter user name" autocomplete="off" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>Email address</label>
+							  <input type="email" name="email" parsley-trigger="change" required="" placeholder="Enter email" autocomplete="off" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>Password</label>
+							  <input id="pass1" type="password" placeholder="Password" required="" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>Repeat Password</label>
+							  <input data-parsley-equalto="#pass1" type="password" required="" placeholder="Password" class="form-control">
+							</div>
+							<div class="be-checkbox">
+							  <input id="check1" type="checkbox" class="icheck">
+							  <label for="check1">Remember me</label>
+							</div>
+							<p class="text-right">
+							  <button type="submit" class="btn btn-space btn-primary">Submit</button>
+							  <button class="btn btn-space btn-default">Cancel</button>
+							</p>
+						  </form>
+						</div>
+                    </div>
+					<div id="affiliateSettings" class="tab-pane">
+						<div class="panel-heading panel-heading-divider">Global Settings</div>
+						<div class="panel-body">
+						  <form action="#" data-parsley-validate="" novalidate="">
+							<div class="form-group">
+							  <label>User Name</label>
+							  <input type="text" name="nick" parsley-trigger="change" required="" placeholder="Enter user name" autocomplete="off" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>Email address</label>
+							  <input type="email" name="email" parsley-trigger="change" required="" placeholder="Enter email" autocomplete="off" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>Password</label>
+							  <input id="pass1" type="password" placeholder="Password" required="" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>Repeat Password</label>
+							  <input data-parsley-equalto="#pass1" type="password" required="" placeholder="Password" class="form-control">
+							</div>
+							<div class="be-checkbox">
+							  <input id="check1" type="checkbox" class="icheck">
+							  <label for="check1">Remember me</label>
+							</div>
+							<p class="text-right">
+							  <button type="submit" class="btn btn-space btn-primary">Submit</button>
+							  <button class="btn btn-space btn-default">Cancel</button>
+							</p>
+						  </form>
+						</div>
+                    </div>
+					<div id="3rdpartySettings" class="tab-pane">
+						<div class="panel-heading panel-heading-divider">Global Settings</div>
+						<div class="panel-body">
+						  <form action="#" data-parsley-validate="" novalidate="">
+							<div class="form-group">
+							  <label>User Name</label>
+							  <input type="text" name="nick" parsley-trigger="change" required="" placeholder="Enter user name" autocomplete="off" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>Email address</label>
+							  <input type="email" name="email" parsley-trigger="change" required="" placeholder="Enter email" autocomplete="off" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>Password</label>
+							  <input id="pass1" type="password" placeholder="Password" required="" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>Repeat Password</label>
+							  <input data-parsley-equalto="#pass1" type="password" required="" placeholder="Password" class="form-control">
+							</div>
+							<div class="be-checkbox">
+							  <input id="check1" type="checkbox" class="icheck">
+							  <label for="check1">Remember me</label>
+							</div>
+							<p class="text-right">
+							  <button type="submit" class="btn btn-space btn-primary">Submit</button>
+							  <button class="btn btn-space btn-default">Cancel</button>
+							</p>
+						  </form>
+						</div>
+                    </div>
+					<div id="customApperance" class="tab-pane">
+						<div class="panel-heading panel-heading-divider">Global Settings</div>
+						<div class="panel-body">
+						  <form action="#" data-parsley-validate="" novalidate="">
+							<div class="form-group">
+							  <label>User Name</label>
+							  <input type="text" name="nick" parsley-trigger="change" required="" placeholder="Enter user name" autocomplete="off" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>Email address</label>
+							  <input type="email" name="email" parsley-trigger="change" required="" placeholder="Enter email" autocomplete="off" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>Password</label>
+							  <input id="pass1" type="password" placeholder="Password" required="" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>Repeat Password</label>
+							  <input data-parsley-equalto="#pass1" type="password" required="" placeholder="Password" class="form-control">
+							</div>
+							<div class="be-checkbox">
+							  <input id="check1" type="checkbox" class="icheck">
+							  <label for="check1">Remember me</label>
+							</div>
+							<p class="text-right">
+							  <button type="submit" class="btn btn-space btn-primary">Submit</button>
+							  <button class="btn btn-space btn-default">Cancel</button>
+							</p>
+						  </form>
+						</div>
+                    </div>
+					<div id="defaultEntities" class="tab-pane">
+						<div class="panel-heading panel-heading-divider">Global Settings</div>
+						<div class="panel-body">
+						  <form action="#" data-parsley-validate="" novalidate="">
+							<div class="form-group">
+							  <label>User Name</label>
+							  <input type="text" name="nick" parsley-trigger="change" required="" placeholder="Enter user name" autocomplete="off" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>Email address</label>
+							  <input type="email" name="email" parsley-trigger="change" required="" placeholder="Enter email" autocomplete="off" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>Password</label>
+							  <input id="pass1" type="password" placeholder="Password" required="" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>Repeat Password</label>
+							  <input data-parsley-equalto="#pass1" type="password" required="" placeholder="Password" class="form-control">
+							</div>
+							<div class="be-checkbox">
+							  <input id="check1" type="checkbox" class="icheck">
+							  <label for="check1">Remember me</label>
+							</div>
+							<p class="text-right">
+							  <button type="submit" class="btn btn-space btn-primary">Submit</button>
+							  <button class="btn btn-space btn-default">Cancel</button>
+							</p>
+						  </form>
+						</div>
+                    </div>
+					
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="col-xs-12 col-md-4">
-                <div class="widget be-loading">
-                    <div class="widget-head">
-                        <div class="tools"><span class="icon mdi mdi-chevron-down"></span><span class="icon mdi mdi-refresh-sync toggle-loading"></span><span class="icon mdi mdi-close"></span></div>
-                        <div class="title">Top Sales</div>
-                    </div>
-                    <div class="widget-chart-container">
-                        <div id="top-sales" style="height: 178px;"></div>
-                        <div class="chart-pie-counter">36</div>
-                    </div>
-                    <div class="chart-legend">
-                        <table>
-                            <tr>
-                                <td class="chart-legend-color"><span data-color="top-sales-color1"></span></td>
-                                <td>Premium Purchases</td>
-                                <td class="chart-legend-value">125</td>
-                            </tr>
-                            <tr>
-                                <td class="chart-legend-color"><span data-color="top-sales-color2"></span></td>
-                                <td>Standard Plans</td>
-                                <td class="chart-legend-value">1569</td>
-                            </tr>
-                            <tr>
-                                <td class="chart-legend-color"><span data-color="top-sales-color3"></span></td>
-                                <td>Services</td>
-                                <td class="chart-legend-value">824</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="be-spinner">
-                        <svg width="40px" height="40px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                        <circle fill="none" stroke-width="4" stroke-linecap="round" cx="33" cy="33" r="30" class="circle"></circle>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <div class="widget widget-calendar">
-                    <div id="calendar-widget"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Latest Activity</div>
-                    <div class="panel-body">
-                        <ul class="user-timeline user-timeline-compact">
-                            <li class="latest">
-                                <div class="user-timeline-date">Just Now</div>
-                                <div class="user-timeline-title">Create New Page</div>
-                                <div class="user-timeline-description">Vestibulum lectus nulla, maximus in eros non, tristique.</div>
-                            </li>
-                            <li>
-                                <div class="user-timeline-date">Today - 15:35</div>
-                                <div class="user-timeline-title">Back Up Theme</div>
-                                <div class="user-timeline-description">Vestibulum lectus nulla, maximus in eros non, tristique.</div>
-                            </li>
-                            <li>
-                                <div class="user-timeline-date">Yesterday - 10:41</div>
-                                <div class="user-timeline-title">Changes In The Structure</div>
-                                <div class="user-timeline-description">Vestibulum lectus nulla, maximus in eros non, tristique.      </div>
-                            </li>
-                            <li>
-                                <div class="user-timeline-date">Yesterday - 3:02</div>
-                                <div class="user-timeline-title">Fix the Sidebar</div>
-                                <div class="user-timeline-description">Vestibulum lectus nulla, maximus in eros non, tristique.</div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-6">
-                <div class="widget be-loading">
-                    <div class="widget-head">
-                        <div class="tools"><span class="icon mdi mdi-chevron-down"></span><span class="icon mdi mdi-refresh-sync toggle-loading"></span><span class="icon mdi mdi-close"></span></div>
-                        <div class="title">Conversions</div>
-                    </div>
-                    <div class="widget-chart-container">
-                        <div class="widget-chart-info xs-mb-20">
-                            <div class="indicator indicator-positive pull-right"><span class="icon mdi mdi-chevron-up"></span><span class="number">15%</span></div>
-                            <div class="counter counter-inline">
-                                <div class="value">156k</div>
-                                <div class="desc">Impressions</div>
-                            </div>
-                        </div>
-                        <div id="map-widget" style="height: 265px;"></div>
-                    </div>
-                    <div class="be-spinner">
-                        <svg width="40px" height="40px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                        <circle fill="none" stroke-width="4" stroke-linecap="round" cx="33" cy="33" r="30" class="circle"></circle>
-                        </svg>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 </div>
