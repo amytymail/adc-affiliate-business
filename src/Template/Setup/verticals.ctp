@@ -35,9 +35,8 @@
                         <div class="tools">
                             <span data-modal="md-scale" class="icon mdi mdi-plus-circle md-trigger"></span>
 							<span class="icon toggle-loading mdi mdi-refresh-sync"></span>
-							<span class="icon mdi mdi-close"></span>
                         </div>
-                        <span class="title">Users management</span>
+                        <span class="title">Verticals management</span>
                     </div>
                       <div class="panel panel-default panel-table">
 						
@@ -45,23 +44,24 @@
 						  <table id="table1" class="table table-striped table-hover table-fw-widget">
 							<thead>
 							  <tr>
-								<th>Registration Date</th>
 								<th>Name</th>
-								<th>Email</th>
-								<th>User Group</th>
-								<th>Status</th>
+								<th>Redirect Offer</th>
+								<th>Category</th>
+								<th>Review Upsells</th>
+								<th>Offers</th>
+								<th>Upsells</th>
+								<th>Actiion</th>
 							  </tr>
 							</thead>
 							<tbody>
 							  <tr class="odd gradeX">
-								<td>Trident</td>
-								<td>
-								  Internet
-								  Explorer 4.0
-								</td>
-								<td>Win 95+</td>
-								<td class="center"> 4</td>
-								<td class="center"></td>
+								<td>Auto Motive</td>
+								<td></td>
+								<td>Auto</td>
+								<td class="center text-success"><i class="icon toggle-loading mdi mdi-check-circle"></i></td>
+								<td class="center">23</td>
+								<td class="center">0</td>
+								<td class="center text-danger"><i class="icon toggle-loading mdi mdi-minus-circle"></i></td>
 							  </tr>
 							  
 							</tbody>

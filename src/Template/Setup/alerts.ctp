@@ -35,9 +35,8 @@
                         <div class="tools">
                             <span data-modal="md-scale" class="icon mdi mdi-plus-circle md-trigger"></span>
 							<span class="icon toggle-loading mdi mdi-refresh-sync"></span>
-							<span class="icon mdi mdi-close"></span>
                         </div>
-                        <span class="title">Users management</span>
+                        <span class="title">Alert management</span>
                     </div>
                       <div class="panel panel-default panel-table">
 						
@@ -45,23 +44,22 @@
 						  <table id="table1" class="table table-striped table-hover table-fw-widget">
 							<thead>
 							  <tr>
-								<th>Registration Date</th>
 								<th>Name</th>
-								<th>Email</th>
-								<th>User Group</th>
-								<th>Status</th>
+								<th>Trigger Condition</th>
+								<th>Send Frequency</th>
+								<th>Last Send</th>
+								<th>Subscribe</th>
+								<th>Action</th>
 							  </tr>
 							</thead>
 							<tbody>
 							  <tr class="odd gradeX">
-								<td>Trident</td>
-								<td>
-								  Internet
-								  Explorer 4.0
-								</td>
-								<td>Win 95+</td>
-								<td class="center"> 4</td>
-								<td class="center"></td>
+								<td>150 Clicks in 10 Minutes From Affiliate</td>
+								<td>Greater Than 150.00 Clicks in 10 minutes</td>
+								<td>1 hour</td>
+								<td class="center">21/7/16 6:31:46 PM</td>
+								<td class="center">0</td>
+								<td class="center"><i class="text-warning icon toggle-loading mdi mdi-edit"></i> | <i class="text-danger icon toggle-loading mdi mdi-minus-circle"></i></td>
 							  </tr>
 							  
 							</tbody>

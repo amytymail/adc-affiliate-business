@@ -51,12 +51,27 @@ class setupController extends AppController
 
     }
 	
-	public function usergroup()
+	public function permissions()
     {
 
     }
 	
 	public function emails()
+    {
+
+    }
+	
+	public function verticals()
+    {
+
+    }
+	
+	public function alerts()
+    {
+
+    }
+	
+	public function token()
     {
 
     }

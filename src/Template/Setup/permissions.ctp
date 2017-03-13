@@ -37,7 +37,7 @@
 							<span class="icon toggle-loading mdi mdi-refresh-sync"></span>
 							<span class="icon mdi mdi-close"></span>
                         </div>
-                        <span class="title">Users management</span>
+                        <span class="title">Role management</span>
                     </div>
                       <div class="panel panel-default panel-table">
 						

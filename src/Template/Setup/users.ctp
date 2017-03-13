@@ -35,7 +35,6 @@
                         <div class="tools">
                             <span data-modal="md-scale" class="icon mdi mdi-plus-circle md-trigger"></span>
 							<span class="icon toggle-loading mdi mdi-refresh-sync"></span>
-							<span class="icon mdi mdi-close"></span>
                         </div>
                         <span class="title">Users management</span>
                     </div>
