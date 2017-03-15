@@ -5,7 +5,7 @@
 		  <div class="left-sidebar-content">
 			<ul class="sidebar-elements">
 			 <li class="divider">Setup Menu</li>
-			 <li class="active"><a href="setup/settings"><i class="icon mdi mdi-accounts-outline"></i><span>Settings</span></a></li>
+			 <li class="active"><a href="/setup/"><i class="icon mdi mdi-accounts-outline"></i><span>Settings</span></a></li>
 			 <li><a href="setup/users"><i class="icon mdi mdi-accounts-outline"></i><span>Users</span></a></li>
 			 <li><a href="setup/emails"><i class="icon mdi mdi-accounts-outline"></i><span>Emails</span></a></li>
 			 <li><a href="setup/verticals"><i class="icon mdi mdi-accounts-outline"></i><span>Verticals</span></a></li>

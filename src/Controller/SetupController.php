@@ -71,7 +71,12 @@ class setupController extends AppController
 
     }
 	
-	public function token()
+	public function tags()
+    {
+
+    }
+	
+	public function tokens()
     {
 
     }

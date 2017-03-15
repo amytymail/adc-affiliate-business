@@ -114,6 +114,11 @@ class UsersController extends AppController {
     }
 
     public function login() {
+		// check whether user is logged in
+		if($this->Auth->user()) {
+			// redirect to other page
+			return $this->redirect($this->Auth->redirectUrl());
+		}
 		$this->viewBuilder()->layout('login');
 
         if ($this->request->is('post')) {
